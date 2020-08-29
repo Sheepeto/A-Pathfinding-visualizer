@@ -1,7 +1,7 @@
 import pygame
 import math
 from queue import PriorityQueue
-
+import random
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("A* Path Finding Algorithm")
@@ -190,7 +190,7 @@ def get_clicked_pos(pos, rows, width):
 
 
 def main(win, width):
-    ROWS = 50
+    ROWS = random.randint(4,100)
     grid = make_grid(ROWS, width)
 
     start = None
